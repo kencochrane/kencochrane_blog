@@ -1,0 +1,7 @@
+{% extends "blog/entry_list.html" %}
+{% block title %} | Blog | Tag cloud{% endblock %}
+
+{% block contentTitle %}Tag cloud{% endblock %}
+{% block entryList %}
+    {% load blog_extras %}{% render_tag_cloud %}
+{% endblock %}

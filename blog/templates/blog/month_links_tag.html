@@ -1,0 +1,9 @@
+{% if dates %}
+<ul>
+    {% for date in dates %}
+    <li><a href="{% url blog_archive_month year=date|date:'Y',month=date|date:'m' %}">{{ date|date:"F Y" }}</a></li>
+    {% endfor %}
+</ul>    
+{% else %}
+    <p>No archives available</p>
+{% endif %}

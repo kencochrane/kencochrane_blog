@@ -1,0 +1,33 @@
+<?xml version="1.0" encoding="utf-8" ?>
+
+<manifest xmlns="http://schemas.microsoft.com/wlw/manifest/weblog">
+  <options>
+    <clientType>Metaweblog</clientType>
+    <supportsNewCategories>Yes</supportsNewCategories>
+	<supportsNewCategoriesInline>Yes</supportsNewCategoriesInline>
+	<supportsSlug>Yes</supportsSlug>
+    <supportsExcerpt>Yes</supportsExcerpt>
+    <supportsEmptyTitles>No</supportsEmptyTitles>
+    <requiresHtmlTitles>No</requiresHtmlTitles>
+    <supportsAutoUpdate>Yes</supportsAutoUpdate>
+  </options>
+
+  <weblog>
+    <serviceName>Django</serviceName>
+    <homepageLinkText>View site</homepageLinkText>
+    <adminLinkText>Manage site</adminLinkText>
+
+    <adminUrl>
+      <![CDATA[ 
+			{blog-homepage-url}/admin/
+		]]>
+    </adminUrl>
+    <postEditingUrl>
+      <![CDATA[ 
+			{blog-homepage-url}/admin/blog/entry/{post-id}/
+		]]>
+    </postEditingUrl>
+  </weblog>
+  
+</manifest>
+

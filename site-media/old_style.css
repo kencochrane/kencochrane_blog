@@ -1,0 +1,308 @@
+/**
+ * erunama.com
+ */
+ 
+html, body, div, span, object, iframe, h1, h2, h3, h4, h5, h6, p, blockquote, pre, a, abbr, acronym, address, big, cite, code, del, dfn, em, img, ins, kbd, q, samp, small, strike, strong, sub, sup, tt, var, dl, dt, dd, ol, ul, li, fieldset, form, label, legend, table, caption, tbody, tfoot, thead, tr, th, td {
+    background:transparent none repeat scroll 0 0;
+    border:0 none;
+    margin:0;
+    outline-style:none;
+    outline-width:0;
+    padding:0;
+    vertical-align:baseline;
+}
+
+html,body {
+	height:100%; /* needed for container min-height */
+    background:#3F3F30;
+	font-family:arial,sans-serif;
+	color:#000000;
+}
+
+body {
+    font-size: 1em; /*16px;*/
+    line-height: 1.125em;
+}
+.right {
+    text-align: right;
+}
+.fright {
+    float: right;
+}
+.fleft {
+    float: left;
+}
+.caps {
+    font-size: 0.92em;
+}
+.smallerFont {
+    font-size: 0.8em;
+}
+.tagCloud {
+    line-height: 1 !important;
+    text-align: justify;
+}
+
+.leftContent {
+    width: 610px;
+}
+.leftContent h2 {
+    margin-bottom: 1.3em;
+    color: #3F3F30;
+}
+.rightContent {
+    width: 175px;
+    margin: 0 25px 25px 25px;
+}
+.rightContent h3{
+    margin: 1em 0 0.3em 0;
+    line-height: 1.2;
+}
+
+a {
+    outline-style: none;
+    text-decoration: none;
+    color: rgb(239, 239, 193); /* EFEFC1 */
+}
+a:hover {
+    color: #FFFFFF;
+    text-decoration: underline;
+}
+h3 a:hover {
+    text-decoration: none;
+}
+
+.content {
+    width: 860px;
+    margin-left: auto;
+    margin-right: auto;
+    position: relative;
+    overflow: hidden;
+}
+
+div#header {
+    background:#3F3F30;
+    width: 100%;
+    /*height: 1.4em;*/ /* 20 */
+    padding-top: 6px;
+    padding-bottom: 6px; /* 6 */
+}
+#header .content {
+    overflow: visible; /* REMOVE? */
+}
+
+#header #topnav {
+    position: absolute;
+    
+    /* new */
+    display: inline;
+    font-weight: bold;
+}
+
+#header #topnav li {
+    display: inline;
+}
+
+#header #topnav a {
+    color: rgb(239, 239, 193);
+    /*float: left;  REMOVE? */
+    font-size: 1.4em;
+    text-transform: lowercase;
+    margin-left: 57px;
+}
+
+#header #topnav a:hover {
+    color: #FFFFFF;
+    text-decoration: none;
+}
+
+table.contentTable {
+    width: 600px;
+    margin-left: 260px;
+    border-collapse:collapse;
+    border-spacing:0;
+    padding: 10px 10px 10px 10px;
+    table-layout: fixed;
+}
+
+.blogPost {
+    color: #FFFFFF;
+    text-align: justify;
+    padding: 25px 25px;
+}
+
+#topPost.blogPost {
+    /*padding: 10px 150px;*/
+    padding: 10px 25px;
+}
+
+.blogPost h3 {
+    font-size: 1.5em;
+    line-height: 1.125em;
+    text-align: left;
+    margin: 10px 0px 0px 0px;
+}
+
+.blogPost h4  {
+    font-size: 90%;
+    color: #EFEFC1;
+    margin: 0px 0px 10px 0px;
+}
+
+td.sectionTitle {
+    color: #FFFFFF;
+    font-size: 3em;
+    border-right: 1px #FFFFFF;
+    line-height: 1em;
+    width: 250px;
+}
+
+div#container {
+	/*position:absolute; /* needed for footer positioning*/
+	margin:0 auto; /* center, not in IE5 */
+	width:100%;
+	height:auto !important; /* real browsers */
+	height:100%; /* IE6: treaded as min-height*/
+	min-height:100%; /* real browsers */
+    min-width: 1000px;
+}
+
+div#blog {
+    width: 100%;
+    /*min-width: 1000px;*/
+    background: #330000 url(shadow.gif) repeat-x;
+    margin: 0 auto;
+}
+
+div#blog .content {
+    background: transparent url(wordsbyme.jpg) no-repeat scroll 24px 20px;
+}
+
+div#blog td {
+    width: 50%;
+}
+
+div#blog p {
+    margin: 10px 0 0 0;
+}
+
+div#middle {
+    width: 100%;
+    background: #670000 url(shadowActivity.gif) repeat-x;
+    margin: 0 auto;
+    color: #FFFFFF;
+}
+
+div#middle .content {
+    background: transparent url(wordsbyothers.jpg) no-repeat scroll 24px 20px;
+}
+
+div#middle .contentTable {
+    margin-top: 15px;
+    margin-bottom: 10px;
+}
+
+div#middle td {
+    padding: 10px 25px;
+}
+div#page td {
+    padding: 10px 50px 10px 0;
+}
+
+div#bottom {
+	width:100%;
+    background: #A31B00 url(shadow3.gif) repeat-x;
+    margin: 0 auto;
+    color: #FFFFFF;
+}
+div#bottom .content {
+    background: transparent url(whatimupto.jpg) no-repeat scroll 24px 20px;
+    padding: 25px 0 8px 0;
+}
+/*div#bottom td {
+    padding: 25px 25px;
+}*/
+
+div#activity p {
+    /*background: transparent url(twitter.gif) no-repeat scroll;*/
+    font-size: 100%;
+    margin: 0px 25px 17px 260px;
+    padding-left: 50px;
+}
+div#activity img {
+    /*margin-right: 10px;*/
+    /*padding-right: 10px;*/
+    margin-left: -25px;
+    vertical-align: text-top;
+    /*float: left;*/
+}
+div#activity span.time {
+    color: #330000;
+    font-size: 75%;
+}
+
+div#footer {
+	width:100%;
+    background: #3F3F30 url(shadow4.gif) repeat-x;
+    margin: 0 auto;
+    color: #FFFFFF;
+}
+
+p#copyright {
+    margin: 10px 25px;
+    text-align: right;
+    font-size: 0.7em;
+    line-height: 0.85em;
+}
+
+/*
+    Speech bubbles
+*/
+/* Normal Bubble */
+div.bubble {
+	/*width: auto;*/
+	font-size: 1em;
+	margin-bottom: 0px;
+    margin-left: 15px;
+    margin: 10px 0 0 15px;
+}
+div.bubble a {
+    color: #A31B00;
+    text-decoration: none;
+}
+div.bubble a:hover {
+    color: #A31B00;
+    text-decoration: underline;
+}
+
+div.bubble blockquote {
+	margin: 0px;
+	padding: 0px;
+	border: 1px solid #330000;
+    background-color: #EFEFC1; /*rgb(239, 239, 193);*/
+    color: #670000;
+}
+
+div.bubble blockquote p {
+	margin: 5px;
+	padding: 0px;
+}
+/*div.bubble blockquote a {
+    color: #A31B00;
+    text-decoration: underline;
+}
+div.bubble blockquote a:hover {
+    color: #A31B00;
+    text-decoration: none;
+}*/
+
+div.bubble cite {
+	position: relative;
+	margin: 0px;
+	padding: 10px 0px 0px 30px;
+	top: 6px;
+	background: transparent url(tip.gif) no-repeat 35px 0;
+	font-style: normal;
+    color: #A31B00;
+    font-size: 75%;
+}

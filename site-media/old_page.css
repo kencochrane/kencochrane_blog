@@ -1,0 +1,200 @@
+/* generated with:
+pygmentize -O style=native -f html -l <LANGUAGE, i.e. python, or blank> -o <OUTPUT.html> <INPUT, i.e.:models.py>
+*/
+
+/*
+    individual page
+*/
+
+div#page {
+    width: 100%;
+    background: #FFFFFF url(shadowWhite.gif) repeat-x; /* EFEFC1 */
+    margin: 0 auto;
+    padding: 25px 0;
+}
+
+div#page a {
+    color: #A31B00;
+    text-decoration: none;
+}
+div#page a:hover {
+    color: #330000;
+    text-decoration: underline;
+}
+
+div#page #post-body img.header {
+    border: 2px groove #670000;
+    margin: 10px 0 10px 249px;
+}
+
+div#page #post-body p {
+    line-height: 1.5em;
+    text-indent: 1em;
+    text-align: justify;
+    margin-left: 250px;
+    width: 500px;
+}
+
+div#page #post-body p:first-child, #page #post-body p.first {
+    text-indent: 0;
+    margin-top: 1em;
+}
+
+#page #post-body p strong:first-child, #page #post-body p.first strong:first-child {
+    font-size: 1.125em;
+    line-height: 1.125em;
+    font-weight: bold;
+    color: #330000;
+}
+
+div#page #post-title {
+    /*padding-left: 260px;*/
+    width: 500px;
+    color: #330000;
+    font-size: 3em;
+    line-height: 1em;
+    letter-spacing: -0.025em;
+    margin: 0 0 0 250px;
+}
+
+div#page #post-body {
+    /*padding-left: 260px;
+    width: 500px;*/
+}
+
+div#page #activity {
+    margin: 20px 0 0 240px;
+    width: 600px;
+}
+div#page #activity p {
+    margin: 0 0 20px 0;
+}
+#activity h4 {
+    margin-bottom: 10px;
+}
+
+/*
+    Entry list
+*/
+#page .entry {
+    /*display: inline;
+    list-style: none;*/
+    min-height: 5em;
+    padding-bottom: 20px;
+    margin-left: 40px;
+}
+#page .entryDate {
+    width: 50px;
+    margin: 5px 0 0 0;
+    padding: 5px 5px;
+    float: left;
+    color: #EFEFC1;
+    text-transform: uppercase;
+    text-align: center;
+    background: #670000;
+}
+#page .entryDate:hover {
+    background: #A31B00;
+}
+#page .entryInfo {
+    margin-left: 75px;
+    /*display: inline;*/
+}
+#page .entryTitle {
+    padding-bottom: 5px;
+}
+
+a.entryNav  {
+    height: 20px;
+    width: 20px;
+    display: block;
+    text-indent: -100em;
+}
+a.entryNav.up {
+    background: transparent url(http://media.erunama.com/navarrows.gif) no-repeat scroll 0 0;
+}
+a.entryNav.up:hover  {
+    background: transparent url(http://media.erunama.com/navarrows.gif) no-repeat scroll 0 -20px;
+}
+a.entryNav.down {
+    background: transparent url(http://media.erunama.com/navarrows.gif) no-repeat scroll -20px 0px;
+}
+a.entryNav.down:hover  {
+    background: transparent url(http://media.erunama.com/navarrows.gif) no-repeat scroll -20px -20px;
+}
+
+/*
+    flat pages
+*/
+#flatpage {
+    width: 860px;
+    margin: 0 auto;
+}
+#flatpage img {
+    float: right;
+    padding: 25px;
+}
+#flatpage-title {
+    width: 500px;
+    color: #330000;
+    font-size: 3em;
+    line-height: 1em;
+    letter-spacing: -0.025em;
+    margin: 0 0 0.3em 0;
+}
+#flatpage-content {
+    width: 500px;
+    font-size: 1em;
+}
+#flatpage-content h4 {
+    margin: 1em 0 0.1em 0;
+}
+#flatpage-content p {
+    line-height: 1.2em;
+    margin-bottom: 0.75em;
+    text-align: justify;
+}
+
+/* 
+    comments
+*/
+div#commentEntry {
+	width:100%;
+    background: #A31B00 url(shadow3.gif) repeat-x;
+    margin: 0 auto;
+    color: #FFFFFF;
+}
+
+#commentEntry .content {
+    margin: 0 auto;
+    padding: 15px 0;
+}
+
+#commentEntry form {
+    padding-left: 285px;
+}
+
+#commentEntry textarea, #commentEntry input[type="text"] {
+    background-color: #EFEFC1;
+    border: 2px solid transparent;
+    color: #670000;
+    margin-bottom: 5px;
+    width: 500px;
+}
+
+#commentEntry label {
+    float: left;
+    font-size: 75%;
+    font-weight: bold;
+    text-align: right;
+    text-transform: uppercase;
+    margin-left: -140px;
+    width: 110px;
+}
+
+/* Code highlighting
+*/
+/* Removed temporarily:
+Generate CSS with
+pygmentize -O style=native -f html -l <LANGUAGE, i.e. python, or blank> -o <OUTPUT.html> <INPUT, i.e.:models.py>
+*/

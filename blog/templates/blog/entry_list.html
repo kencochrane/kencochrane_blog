@@ -1,0 +1,30 @@
+{% extends "base.html" %}
+{% block title %} | Blog{% if page_title %} | {{ page_title }}{% endif %}{% endblock %}
+
+{% block content %}
+    <div id="sidebar" class="fRight rightContent">
+        <h3 class="section-title"><a href="{% url blog_index %}">Entry archive</a></h3>
+        {% load blog_extras %}{% render_month_links %}
+        
+        <h3 class="section-title"><a href="{% url blog_tag_list %}">Tags</a></h3>
+        {% render_all_tag_links %}
+    </div>
+    
+    <div class="leftContent">
+        <h2 class="section-title">{% block contentTitle %}<a href="{% url blog_index %}">entries</a>{% endblock %}</h2>
+        {% block entryList %}
+        <div id="entry-list">
+            {% for entry in object_list %}
+                <h3><a href="{{ entry.get_absolute_url }}">{{ entry.title }}</a> <span class="time">POSTED {{ entry.pub_date|timesince|upper }} AGO</span></h3>
+                <p>{{ entry.snip }} <a href="{{ entry.get_absolute_url }}">(Read more...)</a></p>
+            {% endfor %}
+            
+            <div class="indicator">
+                {% if has_previous %}<a href="{{ previous }}">&#171; Newer entries</a>{% endif %}
+                {% if has_previous and has_next %}|{% endif %}
+                {% if has_next %}<a href="{{ next }}">Older entries &#187;</a>{% endif %}
+            </div>
+        </div>
+        {% endblock %}
+    </div>
+{% endblock %}

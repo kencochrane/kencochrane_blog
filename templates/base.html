@@ -1,0 +1,78 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.1//EN" "http://www.w3.org/TR/xhtml11/DTD/xhtml11.dtd">
+
+<html xmlns="http://www.w3.org/1999/xhtml" xml:lang="en">
+<head>    
+    <meta http-equiv="content-type" content="text/html; charset=utf-8" />
+    <title>{{SITE_TITLE}}{% block title %}{% endblock title%}</title>
+    <link rel="icon" href="{{ MEDIA_URL }}favicon.ico" type="image/x-icon">
+    <link rel="shortcut icon" href="{{ MEDIA_URL }}favicon.ico" type="image/x-icon"> 
+    <link rel="alternate" type="application/rss+xml" title="Latest blog entries" href="{% url blog_entries_rss %}" />
+    <link rel="EditURI" type="application/rsd+xml" href="http://{{ current_site.domain }}{% url rsd_manifest %}" />
+    <link rel="wlwmanifest" type="application/wlwmanifest+xml" href="http://{{ current_site.domain }}{% url wlw_manifest %}" />
+    <link rel="stylesheet" href="{{ MEDIA_URL }}aal.css" type="text/css" media="screen" charset="utf-8" />
+    <link rel="stylesheet" href="{{ MEDIA_URL }}base.css" type="text/css" media="screen" charset="utf-8" />
+    {% block stylesheets %}{% endblock stylesheets%}
+        
+</head>
+<body>
+    <div id="main-wrap">
+        {% block header %}
+        <div id="header">
+            <h1>
+                <a href="{% url main_index %}">{{SITE_TITLE}}</a>
+            </h1>
+            
+            <ul id="navbar">
+                <li><a href="{% url blog_index %}">blog</a></li>
+                <li><a href="/projects/">projects</a></li>
+                <li><a href="/about/">about</a></li>
+                <li><a href="{% url blog_entries_rss %}">feed</a></li>
+            </ul>
+        </div>
+        {% endblock header %}
+        
+        <div id="content">
+        {% block content %}
+        {% endblock content %}
+        </div>
+    </div>
+    
+    {% block javascript %} 
+    {% block viglink %}  
+        {% if VIGLINK_KEY and not debug %}
+            <script type="text/javascript">
+              var vglnk_api_key = "{{VIGLINK_KEY}}";
+              var vglnk_domain = (("https:" == document.location.protocol) ? "https://" : "http://") + "api.viglink.com";
+              document.write(unescape("%3Cscript src='" + vglnk_domain + "/api/vglnk.js?key=" + vglnk_api_key +
+                "' type='text/javascript'%3E%3C/script%3E"));
+            </script>
+            <script type="text/javascript">
+              try {
+                vglnk(vglnk_domain, vglnk_api_key);
+              } catch(err) {}
+            </script>
+        {% endif %}
+    {% endblock viglink %}
+    
+    {% block analytics %}
+        {% if UA_code and not debug %}
+        <script type="text/javascript">
+          var _gaq = _gaq || [];
+          _gaq.push(['_setAccount', '{{UA_code}}']);
+          _gaq.push(['_trackPageview']);
+
+          (function() {
+            var ga = document.createElement('script'); ga.type = 'text/javascript'; ga.async = true;
+            ga.src = ('https:' == document.location.protocol ? 'https://ssl' : 'http://www') + '.google-analytics.com/ga.js';
+            (document.getElementsByTagName('head')[0] || document.getElementsByTagName('body')[0]).appendChild(ga);
+          })();
+        </script>
+        {% endif %}
+    {% endblock analytics %}
+    
+    {% block page-javascript %} {% endblock page-javascript %}
+    
+    {% endblock javascript %}
+</body>
+</html>

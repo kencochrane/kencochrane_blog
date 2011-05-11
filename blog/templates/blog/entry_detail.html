@@ -1,0 +1,42 @@
+{% extends "base.html" %}
+{% load markup %}
+
+{% block title %} | Blog | {{ object.title}}{% endblock %}
+
+{% block content %}
+    <div id="sidebar" class="fRight rightContent">
+        <h3 class="section-title"><a href="{% url blog_index %}">Posted</a></h3>
+        <ul><li>{{ object.pub_date|date:"F j, Y" }}</li></ul>
+        
+        <h3 class="section-title"><a href="{% url blog_tag_list %}">Tagged</a></h3>
+        {% load blog_extras %}{% render_tag_links_for_object object %}
+        
+        {% if ADDTHIS_USERNAME %}
+        <ul><li>
+        <!-- AddThis Button BEGIN -->
+        <a class="addthis_button" href="http://addthis.com/bookmark.php?v=250&amp;username={{ADDTHIS_USERNAME}}"><img src="http://s7.addthis.com/static/btn/v2/lg-share-en.gif" width="125" height="16" alt="Bookmark and Share" style="border:0"/></a><script type="text/javascript" src="http://s7.addthis.com/js/250/addthis_widget.js#username={{ADDTHIS_USERNAME}}"></script>
+        <!-- AddThis Button END -->
+        </li></ul>
+        {% endif %}
+        
+    </div>
+    
+    <div class="leftContent">
+        <h2 class="section-title">{{ object.title }}</h2>
+        <div id="entry-body">
+            {{ object.body_formatted|safe }}
+        </div>
+    </div>
+
+    <div id="comments">
+    <h2 class="section-title">comments</h2>
+    {% if object.allow_comments %}
+        {% load disqus_tags %}
+        {% disqus_dev %}
+        {% disqus_show_comments %}
+    {% else %}
+        <h3>Comments have been closed for this entry.</h3>
+    {% endif %}
+    </div>
+    
+{% endblock %}

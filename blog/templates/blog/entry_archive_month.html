@@ -1,0 +1,4 @@
+{% extends "blog/entry_list.html" %}
+{% block title %} | Blog | {{ month|date:"F Y" }}{% endblock %}
+
+{% block contentTitle %}<a href="{% url blog_archive_month year=month|date:"Y",month=month|date:"m" %}">Monthly archive for {{ month|date:"F Y" }}</a>{% endblock %}

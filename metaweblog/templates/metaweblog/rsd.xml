@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<rsd version="1.0" xmlns="http://archipelago.phrasewise.com/rsd">
+  <service>
+    <engineName>Django</engineName>
+    <engineLink>http://www.djangoproject.com/</engineLink>
+    <homePageLink>http://{{ current_site.domain }}/</homePageLink>
+    <apis>
+      <api name="MetaWeblog" blogID="1" preferred="true" apiLink="http://{{ current_site.domain }}{% url xml_rpc_url %}" />
+    </apis>
+  </service>
+</rsd>

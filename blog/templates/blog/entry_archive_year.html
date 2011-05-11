@@ -1,0 +1,4 @@
+{% extends "blog/entry_list.html" %}
+{% block title %} | Blog | {{ year }}{% endblock %}
+
+{% block contentTitle %}<a href="{% url blog_archive_year year %}">Yearly archive for {{ year }}</a>{% endblock %}

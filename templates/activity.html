@@ -1,0 +1,12 @@
+{% extends "base.html" %}
+{% block title %} | Activity{% if page_title %} | {{ page_title }}{% endif %}{% endblock %}
+
+{% block content %}
+    {% load activitysync_extras %}
+    {% render_activities_with_date_headers object_list %}
+    <div class="indicator">
+        {% if has_previous %}<a href="{{ previous }}">&#171; Newer</a>{% endif %}
+        {% if has_previous and has_next %}|{% endif %}
+        {% if has_next %}<a href="{{ next }}">Older &#187;</a>{% endif %}
+    </div>
+{% endblock %}

@@ -1,0 +1,59 @@
+#!/usr/bin/env python
+
+DEBUG = False
+
+ADMINS = (
+    ('Admin Name', 'admin@example.com'),
+)
+
+SITE_OWNER = 'Author'
+
+EMAIL_HOST = ''
+EMAIL_HOST_PASSWORD = ''
+EMAIL_HOST_USER = ''
+EMAIL_PORT = ''
+SERVER_EMAIL = ''
+
+DATABASES = {
+    'default': {
+        'ENGINE': 'django.db.backends.mysql',
+        'NAME': '',
+        'USER': '',
+        'PASSWORD': '',
+        'HOST': '',
+        'PORT': '',
+    }
+}
+
+CACHE_BACKEND = 'dummy://' #'memcached://unix:/home/username/memcached.sock'
+TIME_ZONE = 'America/Los_Angeles'
+
+MEDIA_URL = ''
+ADMIN_MEDIA_PREFIX = ''
+
+SECRET_KEY = ''
+
+# create a disqus account and then follow link to get key http://disqus.com/api/get_my_key/
+# These should be the API key (http://disqus.com/api/get_my_key/) and website
+# shortname from your DISQUS account.
+DISQUS_API_KEY = ''
+DISQUS_WEBSITE_SHORTNAME = ''
+
+GOOGLE_ANALYTICS_CODE = ''
+
+# http://www.viglink.com used for affiliate link tracking
+VIGLINK_KEY = ''
+
+ACTIVITYSYNC_SETTINGS = {
+    'TWITTER_USERNAME': 'kencochrane',
+    'REDDIT_USERNAME': 'kencochrane',
+    'GOOGLEREADER_SHARED_RSS': '',
+    'GOOGLEREADER_PUBLIC_URL': '',
+}
+
+# http://addthis.com sharing widget.
+ADDTHIS_USERNAME = ''
+
+# Name of the site
+SITE_TITLE = 'site name' 
+SITE_AUTHOR = 'Ghost Writer'

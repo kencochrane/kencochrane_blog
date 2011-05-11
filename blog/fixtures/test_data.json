@@ -1,0 +1,1244 @@
+[
+    {
+        "pk": 34, 
+        "model": "blog.entry", 
+        "fields": {
+            "body": "<p><b><a name=\"ODoxNjozMSBBTQdbdb\">Elements</a></b></p>  <p>&lt;service&gt; is a container element. It's a hedge against the future. Sub-elements of &lt;service&gt; </p>  <ul>   <li>&lt;engineName&gt; a string that is the name of the engine that is providing the services being described. </li>    <li>&lt;engineLink&gt; is the URL to the home of the engine. </li>    <li>&lt;homePageLink&gt; is the URL of the users homepage. </li>    <li>&lt;apis&gt; is a container element.</li> </ul> Sub-elements of &lt;apis&gt;   <ul>   <li>&lt;api&gt; has 4 required attributes. &quot;name&quot; is a string that is the name of the api. There is a list of &quot;well-known&quot; names below. A name does not need to be listed here or elsewhere to be valid. (see below). Multiple api elements are allowed.      <ul>       <li>&quot;preferred&quot; is a boolean and takes either &quot;true&quot; or &quot;false&quot;. The point is to allow weblog software to list all the APIs supported, but choose which one to &quot;recommend&quot; to the client software. Only one API should set as prefered. </li>        <li>&quot;apiLink&quot; is the URL for this API. The location the client should speak to. </li>        <li>&quot;blogID&quot; is a common bit of data that most APIs currently require. It can be specified here. If your system doesn't require it, include the attribute, but leave it blank like so blogID=&quot;&quot; (this is demonstrated in the example.)</li>     </ul>   </li> </ul> Optional sub-elements of &lt;api&gt; The api element doesn't require these elements. Information required by more flexible or capable systems can be expressed here. &lt;settings&gt; is a container element and is required if you are going to include the following optional sub-elements.   <ul>   <li>&lt;docs&gt; is a URL that points to the documentation for this API. </li>    <li>&lt;notes&gt; is text that should be used to explain features and their settings. Intended to be human readable. </li>    <li>&lt;setting&gt; requires a single attribute &quot;name&quot; a string which refers to the name of the &quot;service-specific-setting&quot;. The value is the service setting. Multiple setting elements are allowed.</li> </ul>  <p><b><a name=\"ODoxNzozNCBBTQdbdb\">Well known API names</a></b></p>  <p>The well known names are a list of <b>suggested</b> names at the time of publication (Wednesday, December 18, 2002). Being listed in this table is <b>not</b> required for an api name to be included in a valid RSD document. Further, we recommend that, if possible, you look to the api name implemented by the creator of that api as the definitive &quot;name&quot;. (What is implemented is real.) To suggest additions, please use the form below. (It's broken at the moment, sorry.) (Atom (AtomPub) was added as requested <a href=\"http://turnings.phrasewise.com/2007/10/16/it-pays-to-advertise/\">here</a>. Tuesday, October 16, 2007)</p>", 
+            "allow_comments": 1, 
+            "tags": "newCategory", 
+            "title": "This is a post title", 
+            "snip": "UPDATE! Further, we recommend that, if possible, you look to the api name implemented by the creator of that api as the definitive \"name\". (What is implemented is real.)", 
+            "mod_date": "2010-03-06 23:07:08", 
+            "pub_date": "2010-03-06 23:05:25", 
+            "slug": "different-slug", 
+            "published": 1
+        }
+    }, 
+    {
+        "pk": 33, 
+        "model": "blog.entry", 
+        "fields": {
+            "body": "<h4><tt>render_to_response</tt><a href=\"http://docs.djangoproject.com/en/1.1/topics/http/shortcuts/#render-to-response\">\u00b6</a></h4> <dl><dt><tt>render_to_response</tt>(<em>template</em>[, <em>dictionary</em>][, <em>context_instance</em>][, <em>mimetype</em>])<a href=\"http://docs.djangoproject.com/en/1.1/topics/http/shortcuts/#django.shortcuts.render_to_response\">\u00b6</a></dt><dd>Renders a given template with a given context dictionary and returns an <a href=\"http://docs.djangoproject.com/en/1.1/ref/request-response/#django.http.HttpResponse\"><tt>HttpResponse</tt></a> object with that rendered text.</dd></dl>  <h5>Required arguments<a href=\"http://docs.djangoproject.com/en/1.1/topics/http/shortcuts/#required-arguments\">\u00b6</a></h5> <dl><dt><tt>template</tt></dt><dd>The full name of a template to use or sequence of template names. </dd></dl>  <h5>Optional arguments<a href=\"http://docs.djangoproject.com/en/1.1/topics/http/shortcuts/#optional-arguments\">\u00b6</a></h5> <dl><dt><tt>dictionary</tt></dt><dd>A dictionary of values to add to the template context. By default, this is an empty dictionary. If a value in the dictionary is callable, the view will call it just before rendering the template. </dd><dt><tt>context_instance</tt></dt><dd>     <p>The context instance to render the template with. By default, the template will be rendered with a <tt>Context</tt> instance (filled with values from <tt>dictionary</tt>). If you need to use <a href=\"http://docs.djangoproject.com/en/1.1/ref/templates/api/#subclassing-context-requestcontext\"><em>context processors</em></a>, render the template with a <tt>RequestContext</tt> instance instead. Your code might look something like this:</p>      <pre>return render_to_response('my_template.html',\n                          my_data_dictionary,\n                          context_instance=RequestContext(request))</pre>\n  </dd></dl>\n\n<p><tt>mimetype</tt></p>\n\n<blockquote>\n  <p>New in Django 1.0: <a href=\"http://docs.djangoproject.com/en/1.1/releases/1.0/#releases-1-0\"><em>Please, see the release notes</em></a></p></blockquote>", 
+            "allow_comments": 1, 
+            "tags": "", 
+            "title": "Enter a post title", 
+            "snip": "This is a placeholder snip.", 
+            "mod_date": "2010-03-06 22:48:50", 
+            "pub_date": "2010-03-06 22:48:50", 
+            "slug": "enter-a-post-title", 
+            "published": 1
+        }
+    }, 
+    {
+        "pk": 27, 
+        "model": "blog.entry", 
+        "fields": {
+            "body": "bam", 
+            "allow_comments": 1, 
+            "tags": "", 
+            "title": "Welcome!", 
+            "snip": "This is a placeholder snip.", 
+            "mod_date": "2010-03-14 05:53:58", 
+            "pub_date": "2010-03-06 03:44:27", 
+            "slug": "welcome", 
+            "published": 1
+        }
+    }, 
+    {
+        "pk": 17, 
+        "model": "blog.entry", 
+        "fields": {
+            "body": "<p>Still working on it!&#160; Secrecy!</p>", 
+            "allow_comments": 1, 
+            "tags": "", 
+            "title": "This should not be published", 
+            "snip": "This is a placeholder snip.", 
+            "mod_date": "2010-03-06 01:07:23", 
+            "pub_date": "2010-03-05 02:03:20", 
+            "slug": "this-should-not-be-published", 
+            "published": 0
+        }
+    }, 
+    {
+        "pk": 12, 
+        "model": "blog.entry", 
+        "fields": {
+            "body": "<p>BAM!</p>", 
+            "allow_comments": 1, 
+            "tags": "blog internet test", 
+            "title": "Test with Categories from WLW", 
+            "snip": "This is a placeholder snip.", 
+            "mod_date": "2010-03-05 01:40:16", 
+            "pub_date": "2010-03-05 01:16:59", 
+            "slug": "test-with-categories-from-wlw", 
+            "published": 1
+        }
+    }, 
+    {
+        "pk": 9, 
+        "model": "blog.entry", 
+        "fields": {
+            "body": "<p>Remember when the Internet was supposed to kill off television?\r\n</p>\r\n<p>That hasn\u2019t been the case lately, judging by the record television ratings for big-ticket events. The Vancouver Olympics are shaping up to be the most-watched foreign Winter Games since 1994. This year\u2019s Super Bowl was the most-watched program in United States history, beating out the final episode of \u201cM*A*S*H\u201d in 1983. Awards shows like the Grammys are attracting their biggest audiences in years.\r\n</p>\r\n<h3>The story</h3>\r\n<p>Many television executives are crediting the Internet, in part, for the revival.\r\n</p>\r\n<p>Blogs and social Web sites like Facebook and Twitter enable an online water-cooler conversation, encouraging people to split their time between the computer screen and the big-screen TV.\r\n</p>\r\n<p>The Nielsen Company, which measures television viewership and Web traffic, noticed this month that one in seven people who were watching the Super Bowl and the Olympics opening ceremony were surfing the Web at the same time.\r\n</p>\r\n<p>\u201cThe Internet is our friend, not our enemy,\u201d said Leslie Moonves, chief executive of the CBS Corporation, which broadcast both the Super Bowl and the Grammy Awards this year. \u201cPeople want to be attached to each other.\u201d\r\n</p>\r\n<p>Seeking to capitalize on the online water-cooler effect, NBC showed the Golden Globes live on both coasts for the first time this year, and the network reportedly wants to do the same for the Emmy Awards this fall, so the entire country can watch (and chat online) simultaneously.\r\n</p>\r\n<p>But sometimes the effect works even when the program is not live. Rachel Velonza, a 23-year-old from Seattle, knew that Johnny Weir failed to win a medal in figure skating long before she ever turned on a television last Thursday, but she stayed up until almost midnight, enduring NBC\u2019s much-ridiculed tape delay because she wanted to see for herself why he wound up in sixth place. She knew all her friends were watching because they were talking about it on Twitter (which says it counts 50 million posts every day) and Facebook (which says it surpassed 400 million members this month).\r\n</p>\r\n<p>\u201cEven though knowing ahead spoils the program, you just can\u2019t help but see for yourself what all these people are talking about,\u201d she said.\r\n</p>\r\n<h3>The other crowd</h3>\r\n<p>NBC says it thinks the habits of people like Ms. Velonza partly explain why the ratings for the Olympics are up noticeably.\r\n</p>\r\n<p>\u201cPeople want to have something to share,\u201d Alan Wurtzel, the head of research for NBC Universal, said from Vancouver. He said the effects of online conversations were \u201cimportant for all big event programming, and also, honestly, for all of television going forward.\u201d\r\n</p>\r\n<p>If viewers cannot be in the same room, the next best thing is a chat room or something like it.\r\n</p>\r\n<p>That\u2019s what MTV found last fall during the Video Music Awards: the Twitterati were in a tizzy when Kanye West snatched a microphone from Taylor Swift in the middle of her acceptance speech. The show had an average of nine million viewers, its best performance in six years.\r\n</p>\r\n<p>The Recording Academy, which presents the Grammys, mounted a digital campaign to promote the awards show this year, signing up Facebook fans and monitoring Grammy-related Twitter messages.\r\n</p>\r\n<p>Peter Anton, the academy\u2019s vice president for digital media, said it was not a coincidence that the awards show notched a 35 percent gain over last year\u2019s audience totals.\r\n</p>\r\n<p>Watching the Olympics, Della Lee, a disabled mother of twins in Springfield, Ore., found herself joking on Twitter about curling with dozens of fellow viewers, and was much more deeply engaged in the broadcast as a result. \u201cI really got into curling yesterday! It\u2019s a fun sport,\u201d she wrote to a friend later.\r\n</p>\r\n<h3>Beyond the boob tube</h3>\r\n<p>The effect is obviously not limited to television. Online conversations can also help or hinder opening weekends for movies and the ratings for politicians. Recent studies of online social networks have affirmed what researchers have long recognized: people seek to be around and be influenced by like-minded individuals.\r\n</p>\r\n<p>There are other factors contributing to the ratings spikes: attention-grabbing shows (the Super Bowl featured the New Orleans Saints, a popular underdog), gradual population growth and an economic contraction that some analysts say is leading to more people spending more time at home in front of their TV and computer screens.\r\n</p>\r\n<p>Along with those reasons, \u201cincreased usage of social media is definitely driving the ratings,\u201d said Jon Gibs, a vice president at Nielsen. He said the Olympic data showing simultaneous TV-and-Web viewing signaled the growing importance of interactivity to the television experience.\r\n</p>\r\n<p>Some of the marquee Olympic events are tape-delayed this month, even though Olympic results are instantly available on the Web. But people are still watching the Games in prime time.\r\n</p>\r\n<p>Brad Peterson, a lighting designer in New York, heard about the skier Lindsey Vonn\u2019s crash before Thursday\u2019s replay of it on NBC, but watched regardless. After all, he said, \u201cI didn\u2019t know when, how and who won.\u201d\r\n</p>\r\n<p>For Mr. Wurtzel, the Olympics are a lab, and so far he said he has found that people who follow the Olympics both on TV and online wind up being heavier viewers of television.\r\n</p>\r\n<p>Media companies are starting to consider how to incorporate that water-cooler effect \u2014 and how to harness it for day-to-day TV shows, too. For the Olympics, NBC is promoting something called \u201cYou Be the Judge,\u201d which lets viewers submit their own scores for figure skaters through a Web application and compare their scores to other viewers. The network\u2019s Web site also features a gadget that tracks Twitter opinions about the Games.\r\n</p>\r\n<p>Chloe Sladden, director of media partnerships for Twitter, said sites like Twitter let people feel plugged in to a real-time conversation.\r\n</p>\r\n<p>\u201cIn the future, I can\u2019t imagine a major event where the audience doesn\u2019t become part of the story itself,\u201d Ms. Sladden said.</p>", 
+            "allow_comments": 1, 
+            "tags": "internet new-york-times nytimes television", 
+            "title": "Water-Cooler Effect: Internet Can Be TV's Friend ", 
+            "snip": "Remember when the Internet was supposed to kill off television?", 
+            "mod_date": "2010-03-05 01:35:41", 
+            "pub_date": "2010-02-23 23:50:13", 
+            "slug": "water-cooler-effect", 
+            "published": 1
+        }
+    }, 
+    {
+        "pk": 8, 
+        "model": "blog.entry", 
+        "fields": {
+            "body": "Hey there!", 
+            "allow_comments": 0, 
+            "tags": "test", 
+            "title": "Test Short Snip", 
+            "snip": "Like last year, I decided to browse the past year of photos on my Flickr page and build a set of my favorites. Unlike last year, it was an even longer task this go-round: I scanned close to 400 Flickr pages over the course of 2 weeks. In the future, I should probably start building this set as the year goes on, eh?", 
+            "mod_date": "2010-01-19 02:04:50", 
+            "pub_date": "2009-02-01 04:10:21", 
+            "slug": "test-short-snip", 
+            "published": 1
+        }
+    }, 
+    {
+        "pk": 5, 
+        "model": "blog.entry", 
+        "fields": {
+            "body": "<p>Like last year, I decided to browse the past year of photos on my Flickr page and build a set of my favorites. Unlike last year, it was an even longer task this go-round: I scanned close to 400 Flickr pages over the course of 2 weeks. In the future, I should probably start building this set as the year goes on, eh?</p>\r\n<p>Like last year, I decided to browse the past year of photos on my Flickr page and build a set of my favorites. Unlike last year, it was an even longer task this go-round: I scanned close to 400 Flickr pages over the course of 2 weeks. In the future, I should probably start building this set as the year goes on, eh?</p>\r\n<p>Like last year, I decided to browse the past year of photos on my Flickr page and build a set of my favorites. Unlike last year, it was an even longer task this go-round: I scanned close to 400 Flickr pages over the course of 2 weeks. In the future, I should probably start building this set as the year goes on, eh?</p>\r\n<p>Like last year, I decided to browse the past year of photos on my Flickr page and build a set of my favorites. Unlike last year, it was an even longer task this go-round: I scanned close to 400 Flickr pages over the course of 2 weeks. In the future, I should probably start building this set as the year goes on, eh?</p>\r\n<p>Like last year, I decided to browse the past year of photos on my Flickr page and build a set of my favorites. Unlike last year, it was an even longer task this go-round: I scanned close to 400 Flickr pages over the course of 2 weeks. In the future, I should probably start building this set as the year goes on, eh?</p>\r\n", 
+            "allow_comments": 1, 
+            "tags": "blog test", 
+            "title": "It's a Whole New Me", 
+            "snip": "Like last year, I decided to browse the past year of photos on my Flickr page and build a set of my favorites. Unlike last year, it was an even longer task this go-round: I scanned close to 400 Flickr pages over the course of 2 weeks. In the future, I should probably start building this set as the year goes on, eh?", 
+            "mod_date": "2010-02-21 12:25:58", 
+            "pub_date": "2009-01-19 02:12:39", 
+            "slug": "its-whole-new-me", 
+            "published": 1
+        }
+    }, 
+    {
+        "pk": 4, 
+        "model": "blog.entry", 
+        "fields": {
+            "body": "<p>Rivers Cuomo recently participated in Stereogum's Decomposed series, which invites artists to play some tunes in a stripped down setting. While this usually involves acoustic guitars, Cuomo mixes it up a bit - his three Decomposed videos include an a capella group, a flautist, a pianist and Jermaine Dupri.</p>\r\n<p>Rivers Cuomo recently participated in Stereogum's Decomposed series, which invites artists to play some tunes in a stripped down setting. While this usually involves acoustic guitars, Cuomo mixes it up a bit - his three Decomposed videos include an a capella group, a flautist, a pianist and Jermaine Dupri.</p>\r\n<p>Rivers Cuomo recently participated in Stereogum's Decomposed series, which invites artists to play some tunes in a stripped down setting. While this usually involves acoustic guitars, Cuomo mixes it up a bit - his three Decomposed videos include an a capella group, a flautist, a pianist and Jermaine Dupri.</p>\r\n<p>Rivers Cuomo recently participated in Stereogum's Decomposed series, which invites artists to play some tunes in a stripped down setting. While this usually involves acoustic guitars, Cuomo mixes it up a bit - his three Decomposed videos include an a capella group, a flautist, a pianist and Jermaine Dupri.</p>\r\n<p>Rivers Cuomo recently participated in Stereogum's Decomposed series, which invites artists to play some tunes in a stripped down setting. While this usually involves acoustic guitars, Cuomo mixes it up a bit - his three Decomposed videos include an a capella group, a flautist, a pianist and Jermaine Dupri.</p>\r\n", 
+            "allow_comments": 1, 
+            "tags": "", 
+            "title": "Illustrator Tutorial: Wood Grain", 
+            "snip": "Rivers Cuomo recently participated in Stereogum's Decomposed series, which invites artists to play some tunes in a stripped down setting. While this usually involves acoustic guitars, Cuomo mixes it up a bit - his three Decomposed videos include an a capella group, a flautist, a pianist and Jermaine Dupri.", 
+            "mod_date": "2010-02-21 12:26:28", 
+            "pub_date": "2009-01-19 02:11:52", 
+            "slug": "illustrator-tutorial-wood-grain", 
+            "published": 1
+        }
+    }, 
+    {
+        "pk": 3, 
+        "model": "blog.entry", 
+        "fields": {
+            "body": "<p>Anyways, many of Seth's guests were enamored/disgusted with the song, which was played (quite literally) dozens of times. The song, which features a mostly quick run-through of the Christmas staple, is pretty amusing and interesting. I had several conversations where I mentioned I want to manipulate the song's speed even more than Streisand herself did. Several of these people thought I was joking.</p>\r\n<p>Anyways, many of Seth's guests were enamored/disgusted with the song, which was played (quite literally) dozens of times. The song, which features a mostly quick run-through of the Christmas staple, is pretty amusing and interesting. I had several conversations where I mentioned I want to manipulate the song's speed even more than Streisand herself did. Several of these people thought I was joking.</p>\r\n<p>Anyways, many of Seth's guests were enamored/disgusted with the song, which was played (quite literally) dozens of times. The song, which features a mostly quick run-through of the Christmas staple, is pretty amusing and interesting. I had several conversations where I mentioned I want to manipulate the song's speed even more than Streisand herself did. Several of these people thought I was joking.</p>\r\n<p>Anyways, many of Seth's guests were enamored/disgusted with the song, which was played (quite literally) dozens of times. The song, which features a mostly quick run-through of the Christmas staple, is pretty amusing and interesting. I had several conversations where I mentioned I want to manipulate the song's speed even more than Streisand herself did. Several of these people thought I was joking.</p>\r\n<p>Anyways, many of Seth's guests were enamored/disgusted with the song, which was played (quite literally) dozens of times. The song, which features a mostly quick run-through of the Christmas staple, is pretty amusing and interesting. I had several conversations where I mentioned I want to manipulate the song's speed even more than Streisand herself did. Several of these people thought I was joking.</p>", 
+            "allow_comments": 1, 
+            "tags": "", 
+            "title": "Blog 3", 
+            "snip": "Anyways, many of Seth's guests were enamored/disgusted with the song, which was played (quite literally) dozens of times. The song, which features a mostly quick run-through of the Christmas staple, is pretty amusing and interesting. I had several conversations where I mentioned I want to manipulate the song's speed even more than Streisand herself did. Several of these people thought I was joking.", 
+            "mod_date": "2009-01-19 02:13:56", 
+            "pub_date": "2008-12-29 02:10:33", 
+            "slug": "blog-3", 
+            "published": 1
+        }
+    }, 
+    {
+        "pk": 1, 
+        "model": "blog.entry", 
+        "fields": {
+            "body": "<p>Anyways, many of Seth\u2019s guests were enamored/disgusted with the song, which was played (quite literally) dozens of times. The song, which features a mostly quick run-through of the Christmas staple, is pretty amusing and interesting. I had several conversations where I mentioned I want to manipulate the song\u2019s speed even more than Streisand herself did. Several of these people thought I was joking.</p>\r\n\r\n<p>Anyways, many of Seth\u2019s guests were enamored/disgusted with the song, which was played (quite literally) dozens of times. The song, which features a mostly quick run-through of the Christmas staple, is pretty amusing and interesting. I had several conversations where I mentioned I want to manipulate the song\u2019s speed even more than Streisand herself did. Several of these people thought I was joking.</p>\r\n\r\n<p>Anyways, many of Seth\u2019s guests were enamored/disgusted with the song, which was played (quite literally) dozens of times. The song, which features a mostly quick run-through of the Christmas staple, is pretty amusing and interesting. I had several conversations where I mentioned I want to manipulate the song\u2019s speed even more than Streisand herself did. Several of these people thought I was joking.</p>", 
+            "allow_comments": 0, 
+            "tags": "", 
+            "title": "Test Title: Blog 1", 
+            "snip": "Anyways, many of Seth\u2019s guests were enamored/disgusted with the song, which was played (quite literally) dozens of times. The song, which features a mostly quick run-through of the Christmas staple, is pretty amusing and interesting. I had several conversations where I mentioned I want to manipulate the song\u2019s speed even more than Streisand herself did. Several of these people thought I was joking.", 
+            "mod_date": "2009-01-19 02:15:03", 
+            "pub_date": "2008-11-18 13:57:45", 
+            "slug": "test-title-blog-1", 
+            "published": 1
+        }
+    }, 
+    {
+        "pk": 2, 
+        "model": "blog.entry", 
+        "fields": {
+            "body": "<p>What up yo?</p>", 
+            "allow_comments": 1, 
+            "tags": "", 
+            "title": "Test Title: Blog 2", 
+            "snip": "Hey this is a second entry", 
+            "mod_date": "2009-01-19 02:14:21", 
+            "pub_date": "2008-10-18 14:00:44", 
+            "slug": "test-title-blog-2", 
+            "published": 1
+        }
+    }, 
+    {
+        "pk": 981, 
+        "model": "blog.activity", 
+        "fields": {
+            "username": "erunama", 
+            "author": "Dan Carroll", 
+            "title": "Please let this paper be done already.", 
+            "comments": "", 
+            "source": "T", 
+            "link": "http://twitter.com/erunama/statuses/10446423372", 
+            "published": 1, 
+            "guid": "twitter:10446423372", 
+            "pub_date": "2010-03-13 16:51:08"
+        }
+    }, 
+    {
+        "pk": 979, 
+        "model": "blog.activity", 
+        "fields": {
+            "username": "Dan Carroll", 
+            "author": "Dan Carroll", 
+            "title": "Download the 'Achievement Unlocked' sound - Xbox Live's Major Nelson", 
+            "comments": "Very tempted to use this as my text message sound.  But would that lessen the excitement of hearing it when I actually earn an achievement?", 
+            "source": "GR", 
+            "link": "http://majornelson.com/archive/2007/03/15/download-the-achivement-unlocked-sound.aspx", 
+            "published": 1, 
+            "guid": "tag:google.com,2005:reader/item/6d062cdd29aaafdc", 
+            "pub_date": "2010-03-11 22:12:42"
+        }
+    }, 
+    {
+        "pk": 982, 
+        "model": "blog.activity", 
+        "fields": {
+            "username": "erunama", 
+            "author": "Dan Carroll", 
+            "title": "Got my first Django patch accepted: a one character documentation fix. That's IMPACT, baby.", 
+            "comments": "", 
+            "source": "T", 
+            "link": "http://twitter.com/erunama/statuses/10341036925", 
+            "published": 1, 
+            "guid": "twitter:10341036925", 
+            "pub_date": "2010-03-11 13:42:31"
+        }
+    }, 
+    {
+        "pk": 980, 
+        "model": "blog.activity", 
+        "fields": {
+            "username": "Dan Carroll", 
+            "author": "Dan Carroll", 
+            "title": "Hands-on: The Path of Go (XBLA)", 
+            "comments": "", 
+            "source": "GR", 
+            "link": "http://www.joystiq.com/2010/03/09/hands-on-the-path-of-go-xbla/", 
+            "published": 1, 
+            "guid": "tag:google.com,2005:reader/item/cdc2fdbc74ce5e31", 
+            "pub_date": "2010-03-09 19:00:00"
+        }
+    }, 
+    {
+        "pk": 955, 
+        "model": "blog.activity", 
+        "fields": {
+            "username": "erunama", 
+            "author": "", 
+            "title": "How the cure for scurvy was found and lost", 
+            "comments": "", 
+            "source": "RD", 
+            "link": "http://www.reddit.com/r/science/comments/bao2b/how_the_cure_for_scurvy_was_found_and_lost/", 
+            "published": 1, 
+            "guid": "http://www.reddit.com/r/science/comments/bao2b/how_the_cure_for_scurvy_was_found_and_lost/", 
+            "pub_date": "2010-03-08 06:11:04"
+        }
+    }, 
+    {
+        "pk": 956, 
+        "model": "blog.activity", 
+        "fields": {
+            "username": "erunama", 
+            "author": "Dan Carroll", 
+            "title": "It took a bunch of refactoring and lots of trial and error, but I've got Windows Live Writer integration working really well now. Weee.", 
+            "comments": "", 
+            "source": "T", 
+            "link": "http://twitter.com/erunama/statuses/10111987824", 
+            "published": 1, 
+            "guid": "twitter:10111987824", 
+            "pub_date": "2010-03-07 00:05:15"
+        }
+    }, 
+    {
+        "pk": 957, 
+        "model": "blog.activity", 
+        "fields": {
+            "username": "erunama", 
+            "author": "Dan Carroll", 
+            "title": "Windows Live Writer theme detection is stupid. Rather than detect it by looking the actual post's URL, it looks at the site's main page.", 
+            "comments": "", 
+            "source": "T", 
+            "link": "http://twitter.com/erunama/statuses/10067536808", 
+            "published": 1, 
+            "guid": "twitter:10067536808", 
+            "pub_date": "2010-03-06 01:38:07"
+        }
+    }, 
+    {
+        "pk": 928, 
+        "model": "blog.activity", 
+        "fields": {
+            "username": "Dan Carroll", 
+            "author": "Dan Carroll", 
+            "title": "Mariners Honor HK", 
+            "comments": "", 
+            "source": "GR", 
+            "link": "http://www.thefightins.com/chris/mariners-honor-hk/", 
+            "published": 1, 
+            "guid": "tag:google.com,2005:reader/item/409b281598169175", 
+            "pub_date": "2010-03-05 13:13:29"
+        }
+    }, 
+    {
+        "pk": 958, 
+        "model": "blog.activity", 
+        "fields": {
+            "username": "erunama", 
+            "author": "Dan Carroll", 
+            "title": "Python virtualenvs are really cool.", 
+            "comments": "", 
+            "source": "T", 
+            "link": "http://twitter.com/erunama/statuses/9916816232", 
+            "published": 1, 
+            "guid": "twitter:9916816232", 
+            "pub_date": "2010-03-03 01:04:10"
+        }
+    }, 
+    {
+        "pk": 934, 
+        "model": "blog.activity", 
+        "fields": {
+            "username": "erunama", 
+            "author": "", 
+            "title": "Peter Norvig answers your questions (Ask Me Anything video interview)", 
+            "comments": "", 
+            "source": "RD", 
+            "link": "http://www.reddit.com/r/blog/comments/b8aln/peter_norvig_answers_your_questions_ask_me/", 
+            "published": 1, 
+            "guid": "http://www.reddit.com/r/blog/comments/b8aln/peter_norvig_answers_your_questions_ask_me/", 
+            "pub_date": "2010-03-02 08:37:25"
+        }
+    }, 
+    {
+        "pk": 869, 
+        "model": "blog.activity", 
+        "fields": {
+            "username": "Dan Carroll", 
+            "author": "Dan Carroll", 
+            "title": "Evaluating Django Caching Options | codysoyland.com", 
+            "comments": "Nice overview of Django caching strategies, with statistics.  It's too bad a lot of them aren't really deployable on a shared host like Dreamhost.", 
+            "source": "GR", 
+            "link": "http://www.codysoyland.com/2010/jan/17/evaluating-django-caching-options/", 
+            "published": 1, 
+            "guid": "tag:google.com,2005:reader/item/38aa5ca13afa8918", 
+            "pub_date": "2010-03-01 18:16:06"
+        }
+    }, 
+    {
+        "pk": 911, 
+        "model": "blog.activity", 
+        "fields": {
+            "username": "erunama", 
+            "author": "erunama", 
+            "title": "Optimising Django on Dreamhost - sharebear.co.uk", 
+            "comments": "", 
+            "source": "DL", 
+            "link": "http://sharebear.co.uk/blog/2009/03/12/optimising-django-dreamhost/", 
+            "published": 1, 
+            "guid": "http://delicious.com/url/d62b19834a005157803c8c6b384883b0#erunama", 
+            "pub_date": "2010-03-01 15:29:54"
+        }
+    }, 
+    {
+        "pk": 929, 
+        "model": "blog.activity", 
+        "fields": {
+            "username": "Dan Carroll", 
+            "author": "Dan Carroll", 
+            "title": "Tavis Coburn Illustrates the BAFTA Nominees", 
+            "comments": "", 
+            "source": "GR", 
+            "link": "http://kitsunenoir.com/2010/03/01/tavis-coburn-illustrates-the-bafta-nominees/", 
+            "published": 1, 
+            "guid": "tag:google.com,2005:reader/item/dd0c6b5dbcd71c3b", 
+            "pub_date": "2010-03-01 12:00:00"
+        }
+    }, 
+    {
+        "pk": 912, 
+        "model": "blog.activity", 
+        "fields": {
+            "username": "erunama", 
+            "author": "erunama", 
+            "title": "Johnny Cache - Caching framework for Django applications", 
+            "comments": "", 
+            "source": "DL", 
+            "link": "http://packages.python.org/johnny-cache/", 
+            "published": 1, 
+            "guid": "http://delicious.com/url/fb027e7cce6c3518a8da8cb062a1bb3d#erunama", 
+            "pub_date": "2010-02-28 18:43:40"
+        }
+    }, 
+    {
+        "pk": 959, 
+        "model": "blog.activity", 
+        "fields": {
+            "username": "erunama", 
+            "author": "Dan Carroll", 
+            "title": "Does the Canadian hockey coach have a cup behind him purely for the purpose of spitting out gum?", 
+            "comments": "", 
+            "source": "T", 
+            "link": "http://twitter.com/erunama/statuses/9790449837", 
+            "published": 1, 
+            "guid": "twitter:9790449837", 
+            "pub_date": "2010-02-28 12:30:32"
+        }
+    }, 
+    {
+        "pk": 913, 
+        "model": "blog.activity", 
+        "fields": {
+            "username": "erunama", 
+            "author": "erunama", 
+            "title": "Social Media Network Icons | Komodo Media", 
+            "comments": "", 
+            "source": "DL", 
+            "link": "http://www.komodomedia.com/blog/2009/06/social-network-icon-pack/", 
+            "published": 1, 
+            "guid": "http://delicious.com/url/5bf2623781166602abbb02e7f3250ae4#erunama", 
+            "pub_date": "2010-02-26 18:54:55"
+        }
+    }, 
+    {
+        "pk": 914, 
+        "model": "blog.activity", 
+        "fields": {
+            "username": "erunama", 
+            "author": "erunama", 
+            "title": "Lessons Learned from django-cumulus", 
+            "comments": "", 
+            "source": "DL", 
+            "link": "http://mathematism.com/2010/feb/15/lessons-learned-django-cumulus/", 
+            "published": 1, 
+            "guid": "http://delicious.com/url/61481028eabd6604fb08b39146bcc2af#erunama", 
+            "pub_date": "2010-02-26 16:22:56"
+        }
+    }, 
+    {
+        "pk": 915, 
+        "model": "blog.activity", 
+        "fields": {
+            "username": "erunama", 
+            "author": "erunama", 
+            "title": "Welcome to The Hitchhiker\u2019s Guide to Packaging", 
+            "comments": "", 
+            "source": "DL", 
+            "link": "http://guide.python-distribute.org/", 
+            "published": 1, 
+            "guid": "http://delicious.com/url/1c6281b48df3c2dc4034a90d045e08f4#erunama", 
+            "pub_date": "2010-02-26 15:12:23"
+        }
+    }, 
+    {
+        "pk": 871, 
+        "model": "blog.activity", 
+        "fields": {
+            "username": "Dan Carroll", 
+            "author": "Dan Carroll", 
+            "title": "Scaling Django", 
+            "comments": "Great article, with lots of references to tools for improving the scalability and performance of web applications.", 
+            "source": "GR", 
+            "link": "http://djangoadvent.com/1.2/scaling-django/", 
+            "published": 1, 
+            "guid": "tag:google.com,2005:reader/item/21f9a20600c3daae", 
+            "pub_date": "2010-02-25 20:19:11"
+        }
+    }, 
+    {
+        "pk": 870, 
+        "model": "blog.activity", 
+        "fields": {
+            "username": "Dan Carroll", 
+            "author": "Dan Carroll", 
+            "title": "Hg Init", 
+            "comments": "", 
+            "source": "GR", 
+            "link": "http://simonwillison.net/2010/Feb/25/hg/", 
+            "published": 1, 
+            "guid": "tag:google.com,2005:reader/item/56f79807da115b5b", 
+            "pub_date": "2010-02-25 02:31:37"
+        }
+    }, 
+    {
+        "pk": 909, 
+        "model": "blog.activity", 
+        "fields": {
+            "username": "erunama", 
+            "author": "erunama", 
+            "title": "Massive Network is an Olympian Feat", 
+            "comments": "", 
+            "source": "DG", 
+            "link": "http://digg.com/hardware/Massive_Network_is_an_Olympian_Feat", 
+            "published": 1, 
+            "guid": "http://digg.com/hardware/Massive_Network_is_an_Olympian_Feat", 
+            "pub_date": "2010-02-23 00:08:27"
+        }
+    }, 
+    {
+        "pk": 960, 
+        "model": "blog.activity", 
+        "fields": {
+            "username": "erunama", 
+            "author": "Dan Carroll", 
+            "title": "Twitter needs to add filtering so that I can ignore foursquare updates. It's just like Farmville, but with animals replaced by venues.", 
+            "comments": "", 
+            "source": "T", 
+            "link": "http://twitter.com/erunama/statuses/9451092814", 
+            "published": 1, 
+            "guid": "twitter:9451092814", 
+            "pub_date": "2010-02-21 16:03:03"
+        }
+    }, 
+    {
+        "pk": 961, 
+        "model": "blog.activity", 
+        "fields": {
+            "username": "erunama", 
+            "author": "Dan Carroll", 
+            "title": "Home, sweet home.  Time to get cracking on the 16.5 hours of Olympics I have recorded.", 
+            "comments": "", 
+            "source": "T", 
+            "link": "http://twitter.com/erunama/statuses/9418571129", 
+            "published": 1, 
+            "guid": "twitter:9418571129", 
+            "pub_date": "2010-02-20 22:23:20"
+        }
+    }, 
+    {
+        "pk": 872, 
+        "model": "blog.activity", 
+        "fields": {
+            "username": "Dan Carroll", 
+            "author": "Dan Carroll", 
+            "title": "Steve Wiebe reclaims Donkey Kong Jr. world record", 
+            "comments": "", 
+            "source": "GR", 
+            "link": "http://www.joystiq.com/2010/02/19/steve-wiebe-reclaims-donkey-kong-jr-world-record/", 
+            "published": 1, 
+            "guid": "tag:google.com,2005:reader/item/b40c42955071b268", 
+            "pub_date": "2010-02-18 22:00:00"
+        }
+    }, 
+    {
+        "pk": 962, 
+        "model": "blog.activity", 
+        "fields": {
+            "username": "erunama", 
+            "author": "Dan Carroll", 
+            "title": "Just ate at the sleazy bar from Top Gun", 
+            "comments": "", 
+            "source": "T", 
+            "link": "http://twitter.com/erunama/statuses/9319072102", 
+            "published": 1, 
+            "guid": "twitter:9319072102", 
+            "pub_date": "2010-02-18 20:19:23"
+        }
+    }, 
+    {
+        "pk": 963, 
+        "model": "blog.activity", 
+        "fields": {
+            "username": "erunama", 
+            "author": "Dan Carroll", 
+            "title": "Cactus or cactree?  http://twitpic.com/140ecu", 
+            "comments": "", 
+            "source": "T", 
+            "link": "http://twitter.com/erunama/statuses/9305239971", 
+            "published": 1, 
+            "guid": "twitter:9305239971", 
+            "pub_date": "2010-02-18 14:47:33"
+        }
+    }, 
+    {
+        "pk": 874, 
+        "model": "blog.activity", 
+        "fields": {
+            "username": "Dan Carroll", 
+            "author": "Dan Carroll", 
+            "title": "A Photo Of Stephen Colbert Reading Cat Fancy Magazine At The Olympics", 
+            "comments": "", 
+            "source": "GR", 
+            "link": "http://feedproxy.google.com/~r/Videogum/~3/ElTIhTBALlM/a_photo_of_stephen_colbert_rea_115211.html", 
+            "published": 1, 
+            "guid": "tag:google.com,2005:reader/item/f7a987e5e7e55c18", 
+            "pub_date": "2010-02-18 11:30:55"
+        }
+    }, 
+    {
+        "pk": 873, 
+        "model": "blog.activity", 
+        "fields": {
+            "username": "Dan Carroll", 
+            "author": "Dan Carroll", 
+            "title": "Photo(s) of the Day: Colbert, at the Olympic Richmond Oval, uses...", 
+            "comments": "", 
+            "source": "GR", 
+            "link": "http://feedproxy.google.com/~r/feedburner/oicv/~3/RAjNuK3CTEE/396892768", 
+            "published": 1, 
+            "guid": "tag:google.com,2005:reader/item/976b5bbe81d84aa7", 
+            "pub_date": "2010-02-18 09:57:00"
+        }
+    }, 
+    {
+        "pk": 964, 
+        "model": "blog.activity", 
+        "fields": {
+            "username": "erunama", 
+            "author": "Dan Carroll", 
+            "title": "I'm hoping my DVR can handle recording 4 days of Olympic HD goodness.", 
+            "comments": "", 
+            "source": "T", 
+            "link": "http://twitter.com/erunama/statuses/9265821659", 
+            "published": 1, 
+            "guid": "twitter:9265821659", 
+            "pub_date": "2010-02-17 19:18:08"
+        }
+    }, 
+    {
+        "pk": 875, 
+        "model": "blog.activity", 
+        "fields": {
+            "username": "Dan Carroll", 
+            "author": "Dan Carroll", 
+            "title": "Pressure Builds On NBC To Explain Why It's Ruining The Olympics", 
+            "comments": "", 
+            "source": "GR", 
+            "link": "http://feedproxy.google.com/~r/businessinsider/~3/w6Ip-QMNXrY/henry-blodget-pressure-builds-on-nbc-to-explain-why-its-ruining-the-olympics-2010-2", 
+            "published": 1, 
+            "guid": "tag:google.com,2005:reader/item/c08e012063b54c2c", 
+            "pub_date": "2010-02-17 09:22:20"
+        }
+    }, 
+    {
+        "pk": 965, 
+        "model": "blog.activity", 
+        "fields": {
+            "username": "erunama", 
+            "author": "Dan Carroll", 
+            "title": "Thank you, Virgin America. You satisfied my lifelong desire to play Doom on an in-flight entertainment system.", 
+            "comments": "", 
+            "source": "T", 
+            "link": "http://twitter.com/erunama/statuses/9242632444", 
+            "published": 1, 
+            "guid": "twitter:9242632444", 
+            "pub_date": "2010-02-17 09:21:33"
+        }
+    }, 
+    {
+        "pk": 966, 
+        "model": "blog.activity", 
+        "fields": {
+            "username": "erunama", 
+            "author": "Dan Carroll", 
+            "title": "I have to restart my computer after updating iTunes?  A full install of Office doesn't even make you do that anymore!", 
+            "comments": "", 
+            "source": "T", 
+            "link": "http://twitter.com/erunama/statuses/9222957642", 
+            "published": 1, 
+            "guid": "twitter:9222957642", 
+            "pub_date": "2010-02-16 22:23:58"
+        }
+    }, 
+    {
+        "pk": 967, 
+        "model": "blog.activity", 
+        "fields": {
+            "username": "erunama", 
+            "author": "Dan Carroll", 
+            "title": "I tried to incorrectly pluralize \"panini\" and decided that it looked dirty. I think the Italians were mindful of that. Thank you, Italians.", 
+            "comments": "", 
+            "source": "T", 
+            "link": "http://twitter.com/erunama/statuses/9211715318", 
+            "published": 1, 
+            "guid": "twitter:9211715318", 
+            "pub_date": "2010-02-16 17:18:23"
+        }
+    }, 
+    {
+        "pk": 876, 
+        "model": "blog.activity", 
+        "fields": {
+            "username": "Dan Carroll", 
+            "author": "Dan Carroll", 
+            "title": "2010 Sasquatch! Lineup Is Out", 
+            "comments": "Lots of great stuff!", 
+            "source": "GR", 
+            "link": "http://feeds.gothamistllc.com/click.phdo?i=f28a6ebfd4737e1178771fc7e56055c2", 
+            "published": 1, 
+            "guid": "tag:google.com,2005:reader/item/6d8d1ba2941ff8b7", 
+            "pub_date": "2010-02-16 10:47:22"
+        }
+    }, 
+    {
+        "pk": 968, 
+        "model": "blog.activity", 
+        "fields": {
+            "username": "erunama", 
+            "author": "Dan Carroll", 
+            "title": "Snowboard cross is my new favorite Olympic event.", 
+            "comments": "", 
+            "source": "T", 
+            "link": "http://twitter.com/erunama/statuses/9178252346", 
+            "published": 1, 
+            "guid": "twitter:9178252346", 
+            "pub_date": "2010-02-16 01:07:04"
+        }
+    }, 
+    {
+        "pk": 969, 
+        "model": "blog.activity", 
+        "fields": {
+            "username": "erunama", 
+            "author": "Dan Carroll", 
+            "title": "Windows Phone 7 looks pretty sweet. My iPhone contract should be up just in time to consider getting one at the end of the year.", 
+            "comments": "", 
+            "source": "T", 
+            "link": "http://twitter.com/erunama/statuses/9154217767", 
+            "published": 1, 
+            "guid": "twitter:9154217767", 
+            "pub_date": "2010-02-15 12:13:04"
+        }
+    }, 
+    {
+        "pk": 970, 
+        "model": "blog.activity", 
+        "fields": {
+            "username": "erunama", 
+            "author": "Dan Carroll", 
+            "title": "Revelation of the day: in Remote Desktop, you can drag the pinned connection bar across the top of the screen!", 
+            "comments": "", 
+            "source": "T", 
+            "link": "http://twitter.com/erunama/statuses/9126444093", 
+            "published": 1, 
+            "guid": "twitter:9126444093", 
+            "pub_date": "2010-02-14 20:19:24"
+        }
+    }, 
+    {
+        "pk": 917, 
+        "model": "blog.activity", 
+        "fields": {
+            "username": "erunama", 
+            "author": "", 
+            "title": "Who all is on Github/Bitbucket/etc? Let's see what interesting projects Proggit is working on these days!", 
+            "comments": "", 
+            "source": "RD", 
+            "link": "http://www.reddit.com/r/programming/comments/b1rmv/who_all_is_on_githubbitbucketetc_lets_see_what/", 
+            "published": 1, 
+            "guid": "http://www.reddit.com/r/programming/comments/b1rmv/who_all_is_on_githubbitbucketetc_lets_see_what/", 
+            "pub_date": "2010-02-13 14:12:35"
+        }
+    }, 
+    {
+        "pk": 910, 
+        "model": "blog.activity", 
+        "fields": {
+            "username": "erunama", 
+            "author": "erunama", 
+            "title": "The 10 Greatest Apocalyptic Novels You Should Read", 
+            "comments": "", 
+            "source": "DG", 
+            "link": "http://digg.com/arts_culture/The_10_Greatest_Apocalyptic_Novels_You_Should_Read", 
+            "published": 1, 
+            "guid": "http://digg.com/arts_culture/The_10_Greatest_Apocalyptic_Novels_You_Should_Read", 
+            "pub_date": "2010-02-13 13:27:44"
+        }
+    }, 
+    {
+        "pk": 877, 
+        "model": "blog.activity", 
+        "fields": {
+            "username": "Dan Carroll", 
+            "author": "Dan Carroll", 
+            "title": "Mapping Facebook Connections", 
+            "comments": "Glad to see how isolated the Pacific Northwest appears to be in this study!", 
+            "source": "GR", 
+            "link": "http://www.mcwetboy.net/maproom/2010/02/mapping_faceboo.php", 
+            "published": 1, 
+            "guid": "tag:google.com,2005:reader/item/5dc6dc536952d659", 
+            "pub_date": "2010-02-12 23:49:40"
+        }
+    }, 
+    {
+        "pk": 878, 
+        "model": "blog.activity", 
+        "fields": {
+            "username": "Dan Carroll", 
+            "author": "Dan Carroll", 
+            "title": "Full Screen Weather Is a Giant, No-Frills Weather Map [Weather]", 
+            "comments": "Wow, this is great!  It would be cool to have this embedded in a screensaver or as an active desktop.", 
+            "source": "GR", 
+            "link": "http://feeds.gawker.com/~r/lifehacker/full/~3/p4cFIJ9BzdE/full-screen-weather-is-a-giant-no+frills-weather-map", 
+            "published": 1, 
+            "guid": "tag:google.com,2005:reader/item/9592e8f2239cb446", 
+            "pub_date": "2010-02-12 15:47:46"
+        }
+    }, 
+    {
+        "pk": 971, 
+        "model": "blog.activity", 
+        "fields": {
+            "username": "erunama", 
+            "author": "Dan Carroll", 
+            "title": "Bitbucket increased their free storage space to a full gig!  Sweet! http://bit.ly/d1YSdF", 
+            "comments": "", 
+            "source": "T", 
+            "link": "http://twitter.com/erunama/statuses/9001574831", 
+            "published": 1, 
+            "guid": "twitter:9001574831", 
+            "pub_date": "2010-02-12 01:07:31"
+        }
+    }, 
+    {
+        "pk": 972, 
+        "model": "blog.activity", 
+        "fields": {
+            "username": "erunama", 
+            "author": "Dan Carroll", 
+            "title": "Just signed up on LinkedIn. Not impressed, especially since the site seems to require reauthentication every 10 minutes.", 
+            "comments": "", 
+            "source": "T", 
+            "link": "http://twitter.com/erunama/statuses/8880046812", 
+            "published": 1, 
+            "guid": "twitter:8880046812", 
+            "pub_date": "2010-02-09 17:11:12"
+        }
+    }, 
+    {
+        "pk": 973, 
+        "model": "blog.activity", 
+        "fields": {
+            "username": "erunama", 
+            "author": "Dan Carroll", 
+            "title": "\"The Pok\u00e9walker is a special pedometer that you carry with you that lets you take Pok\u00e9mon fun wherever you go!\" http://bit.ly/bDVk2v", 
+            "comments": "", 
+            "source": "T", 
+            "link": "http://twitter.com/erunama/statuses/8868432635", 
+            "published": 1, 
+            "guid": "twitter:8868432635", 
+            "pub_date": "2010-02-09 11:58:43"
+        }
+    }, 
+    {
+        "pk": 918, 
+        "model": "blog.activity", 
+        "fields": {
+            "username": "erunama", 
+            "author": "", 
+            "title": "A Few Billion Lines of Code Later: Using Static Analysis to Find Bugs in the Real World", 
+            "comments": "", 
+            "source": "RD", 
+            "link": "http://www.reddit.com/r/programming/comments/azlhq/a_few_billion_lines_of_code_later_using_static/", 
+            "published": 1, 
+            "guid": "http://www.reddit.com/r/programming/comments/azlhq/a_few_billion_lines_of_code_later_using_static/", 
+            "pub_date": "2010-02-08 11:48:58"
+        }
+    }, 
+    {
+        "pk": 879, 
+        "model": "blog.activity", 
+        "fields": {
+            "username": "Dan Carroll", 
+            "author": "Dan Carroll", 
+            "title": "The 2010/2011 Seattle Symphony subscription season at a glance", 
+            "comments": "", 
+            "source": "GR", 
+            "link": "http://blogs.msdn.com/oldnewthing/archive/2010/02/08/9959495.aspx", 
+            "published": 1, 
+            "guid": "tag:google.com,2005:reader/item/6a3fd7865c9e0791", 
+            "pub_date": "2010-02-08 07:00:01"
+        }
+    }, 
+    {
+        "pk": 974, 
+        "model": "blog.activity", 
+        "fields": {
+            "username": "erunama", 
+            "author": "Dan Carroll", 
+            "title": "Fire alarm going off in the building... AGAIN", 
+            "comments": "", 
+            "source": "T", 
+            "link": "http://twitter.com/erunama/statuses/8784029131", 
+            "published": 1, 
+            "guid": "twitter:8784029131", 
+            "pub_date": "2010-02-07 15:29:30"
+        }
+    }, 
+    {
+        "pk": 975, 
+        "model": "blog.activity", 
+        "fields": {
+            "username": "erunama", 
+            "author": "Dan Carroll", 
+            "title": "Papering.  A thousandish more words to go...", 
+            "comments": "", 
+            "source": "T", 
+            "link": "http://twitter.com/erunama/statuses/8751135213", 
+            "published": 1, 
+            "guid": "twitter:8751135213", 
+            "pub_date": "2010-02-06 20:25:46"
+        }
+    }, 
+    {
+        "pk": 976, 
+        "model": "blog.activity", 
+        "fields": {
+            "username": "erunama", 
+            "author": "Dan Carroll", 
+            "title": "Mmm, Stone Brewing variety pack  http://twitpic.com/11s9in", 
+            "comments": "", 
+            "source": "T", 
+            "link": "http://twitter.com/erunama/statuses/8742853439", 
+            "published": 1, 
+            "guid": "twitter:8742853439", 
+            "pub_date": "2010-02-06 16:30:11"
+        }
+    }, 
+    {
+        "pk": 977, 
+        "model": "blog.activity", 
+        "fields": {
+            "username": "erunama", 
+            "author": "Dan Carroll", 
+            "title": "Typo of the day: Seattle PI article says Seattle school district must reconsider \"controversial meth curriculum.\" Controversial indeed.", 
+            "comments": "", 
+            "source": "T", 
+            "link": "http://twitter.com/erunama/statuses/8709362718", 
+            "published": 1, 
+            "guid": "twitter:8709362718", 
+            "pub_date": "2010-02-05 20:32:13"
+        }
+    }, 
+    {
+        "pk": 978, 
+        "model": "blog.activity", 
+        "fields": {
+            "username": "erunama", 
+            "author": "Dan Carroll", 
+            "title": "Big WTF of the day: UW wanting to charge an $83 credit card \"convenience fee\" on a $149 payment.  No thanks.", 
+            "comments": "", 
+            "source": "T", 
+            "link": "http://twitter.com/erunama/statuses/8665560707", 
+            "published": 1, 
+            "guid": "twitter:8665560707", 
+            "pub_date": "2010-02-04 21:36:29"
+        }
+    }, 
+    {
+        "pk": 881, 
+        "model": "blog.activity", 
+        "fields": {
+            "username": "Dan Carroll", 
+            "author": "Dan Carroll", 
+            "title": "How Many Passes?", 
+            "comments": "Glad that the people who built th C# compiler put in the extra effort to have it do all of these passes. It saves me a lot of effort while developing!", 
+            "source": "GR", 
+            "link": "http://blogs.msdn.com/ericlippert/archive/2010/02/04/how-many-passes.aspx", 
+            "published": 1, 
+            "guid": "tag:google.com,2005:reader/item/8088f1014b75e954", 
+            "pub_date": "2010-02-04 10:26:31"
+        }
+    }, 
+    {
+        "pk": 880, 
+        "model": "blog.activity", 
+        "fields": {
+            "username": "Dan Carroll", 
+            "author": "Dan Carroll", 
+            "title": "A Sculpture That Perpetually Sells Itself On eBay", 
+            "comments": "", 
+            "source": "GR", 
+            "link": "http://feeds.laughingsquid.com/~r/laughingsquid/~3/QtLHIjoqSko/", 
+            "published": 1, 
+            "guid": "tag:google.com,2005:reader/item/50b3e633319074a6", 
+            "pub_date": "2010-02-03 07:21:21"
+        }
+    }, 
+    {
+        "pk": 882, 
+        "model": "blog.activity", 
+        "fields": {
+            "username": "Dan Carroll", 
+            "author": "Dan Carroll", 
+            "title": "You can't unsee Bomberman in BioShock 2", 
+            "comments": "", 
+            "source": "GR", 
+            "link": "http://www.joystiq.com/2010/02/02/you-cant-unsee-bomberman-in-bioshock-2/", 
+            "published": 1, 
+            "guid": "tag:google.com,2005:reader/item/03cf7b4e10d6bf0b", 
+            "pub_date": "2010-02-02 06:45:00"
+        }
+    }, 
+    {
+        "pk": 919, 
+        "model": "blog.activity", 
+        "fields": {
+            "username": "erunama", 
+            "author": "", 
+            "title": "My Extravagant Zsh Prompt", 
+            "comments": "", 
+            "source": "RD", 
+            "link": "http://www.reddit.com/r/programming/comments/awnww/my_extravagant_zsh_prompt/", 
+            "published": 1, 
+            "guid": "http://www.reddit.com/r/programming/comments/awnww/my_extravagant_zsh_prompt/", 
+            "pub_date": "2010-02-01 05:15:26"
+        }
+    }, 
+    {
+        "pk": 883, 
+        "model": "blog.activity", 
+        "fields": {
+            "username": "Dan Carroll", 
+            "author": "Dan Carroll", 
+            "title": "Why testers?", 
+            "comments": "If a tester boosts a programmer's morale, then who boosts the tester's morale?  Joel is not making it seem like a very glorious job, especially since he is trying to hire for that role.", 
+            "source": "GR", 
+            "link": "http://www.joelonsoftware.com/items/2010/01/26.html", 
+            "published": 1, 
+            "guid": "tag:google.com,2005:reader/item/bcb6c09c6979e942", 
+            "pub_date": "2010-01-27 17:05:55"
+        }
+    }, 
+    {
+        "pk": 885, 
+        "model": "blog.activity", 
+        "fields": {
+            "username": "Dan Carroll", 
+            "author": "Dan Carroll", 
+            "title": "Christopher Blizzard: HTML5 video and H.264 \u2013 what history tells us and why we\u2019re standing with the web", 
+            "comments": "Nice perspective on HTML5 video as it pertains to free software.", 
+            "source": "GR", 
+            "link": "http://www.0xdeadbeef.com/weblog/2010/01/html5-video-and-h-264-what-history-tells-us-and-why-were-standing-with-the-web/", 
+            "published": 1, 
+            "guid": "tag:google.com,2005:reader/item/4790347c91237aad", 
+            "pub_date": "2010-01-25 20:23:22"
+        }
+    }, 
+    {
+        "pk": 884, 
+        "model": "blog.activity", 
+        "fields": {
+            "username": "Dan Carroll", 
+            "author": "Dan Carroll", 
+            "title": "#27920 - Tea Sub. Little yellow submarine for tea...", 
+            "comments": "", 
+            "source": "GR", 
+            "link": "http://www.notcot.org/post/27920", 
+            "published": 1, 
+            "guid": "tag:google.com,2005:reader/item/59ccf3159dbd6d33", 
+            "pub_date": "2010-01-25 08:41:14"
+        }
+    }, 
+    {
+        "pk": 886, 
+        "model": "blog.activity", 
+        "fields": {
+            "username": "Dan Carroll", 
+            "author": "Dan Carroll", 
+            "title": "Holy Go Blighty: Memories of Ultima?", 
+            "comments": "", 
+            "source": "GR", 
+            "link": "http://feedproxy.google.com/~r/RockPaperShotgun/~3/YwyNZ26YWOM/", 
+            "published": 1, 
+            "guid": "tag:google.com,2005:reader/item/683f068da1f44a4c", 
+            "pub_date": "2010-01-24 04:16:13"
+        }
+    }, 
+    {
+        "pk": 887, 
+        "model": "blog.activity", 
+        "fields": {
+            "username": "Dan Carroll", 
+            "author": "Dan Carroll", 
+            "title": "Garmin Voice Studio Lets You Create Custom Voices for Your GPS Device  [Downloads]", 
+            "comments": "If I win a game on \"Wait Wait... Don't Tell Me,\" will Carl Kasell record this for me instead of a message on my answering machine?", 
+            "source": "GR", 
+            "link": "http://feeds.gawker.com/~r/lifehacker/full/~3/qvkO35cFdy8/garmin-voice-studio-lets-you-create-custom-voices-for-your-gps-device", 
+            "published": 1, 
+            "guid": "tag:google.com,2005:reader/item/1be113c3b85c84fb", 
+            "pub_date": "2010-01-23 15:13:23"
+        }
+    }, 
+    {
+        "pk": 888, 
+        "model": "blog.activity", 
+        "fields": {
+            "username": "Dan Carroll", 
+            "author": "Dan Carroll", 
+            "title": "Color Identifying System For The Color Blind", 
+            "comments": "Interesting idea, but not sure how much value this system would provide over labeling the color its name.  The last example, with these symbols on colored pencils, highlights the fact: why not just label the pencil YELLOW instead of /.  Also, symmetrical design of this system would result in orientation problems.  Does a colorblind hospital employee read my bracelet from my perspective or her perspective?", 
+            "source": "GR", 
+            "link": "http://feedproxy.google.com/~r/Colourlovers/~3/sYRCvo0-Yv8/", 
+            "published": 1, 
+            "guid": "tag:google.com,2005:reader/item/51f3610784da3ab9", 
+            "pub_date": "2010-01-21 16:56:48"
+        }
+    }, 
+    {
+        "pk": 920, 
+        "model": "blog.activity", 
+        "fields": {
+            "username": "erunama", 
+            "author": "", 
+            "title": "Here's a lovely Link's Awakening DX wallpaper I found on /b/ of all places...", 
+            "comments": "", 
+            "source": "RD", 
+            "link": "http://www.reddit.com/r/gaming/comments/aslkw/heres_a_lovely_links_awakening_dx_wallpaper_i/", 
+            "published": 1, 
+            "guid": "http://www.reddit.com/r/gaming/comments/aslkw/heres_a_lovely_links_awakening_dx_wallpaper_i/", 
+            "pub_date": "2010-01-21 15:14:22"
+        }
+    }, 
+    {
+        "pk": 921, 
+        "model": "blog.activity", 
+        "fields": {
+            "username": "erunama", 
+            "author": "", 
+            "title": "Interesting programming problems", 
+            "comments": "", 
+            "source": "RD", 
+            "link": "http://www.reddit.com/r/programming/comments/as54j/interesting_programming_problems/", 
+            "published": 1, 
+            "guid": "http://www.reddit.com/r/programming/comments/as54j/interesting_programming_problems/", 
+            "pub_date": "2010-01-20 16:15:36"
+        }
+    }, 
+    {
+        "pk": 922, 
+        "model": "blog.activity", 
+        "fields": {
+            "username": "erunama", 
+            "author": "", 
+            "title": "Did anyone else use to love reading booklets that came in game boxes? Am I the only one that misses it? What was your favorite?", 
+            "comments": "", 
+            "source": "RD", 
+            "link": "http://www.reddit.com/r/gaming/comments/ariio/did_anyone_else_use_to_love_reading_booklets_that/", 
+            "published": 1, 
+            "guid": "http://www.reddit.com/r/gaming/comments/ariio/did_anyone_else_use_to_love_reading_booklets_that/", 
+            "pub_date": "2010-01-19 08:44:56"
+        }
+    }, 
+    {
+        "pk": 924, 
+        "model": "blog.activity", 
+        "fields": {
+            "username": "erunama", 
+            "author": "", 
+            "title": "Recipe for Carl Sagan's Apple Pie", 
+            "comments": "", 
+            "source": "RD", 
+            "link": "http://www.reddit.com/r/science/comments/arhkv/recipe_for_carl_sagans_apple_pie/", 
+            "published": 1, 
+            "guid": "http://www.reddit.com/r/science/comments/arhkv/recipe_for_carl_sagans_apple_pie/", 
+            "pub_date": "2010-01-19 07:42:16"
+        }
+    }, 
+    {
+        "pk": 923, 
+        "model": "blog.activity", 
+        "fields": {
+            "username": "erunama", 
+            "author": "", 
+            "title": "Conan is looking for a Casual Encounter!", 
+            "comments": "", 
+            "source": "RD", 
+            "link": "http://www.reddit.com/r/funny/comments/arasl/conan_is_looking_for_a_casual_encounter/", 
+            "published": 1, 
+            "guid": "http://www.reddit.com/r/funny/comments/arasl/conan_is_looking_for_a_casual_encounter/", 
+            "pub_date": "2010-01-18 20:48:48"
+        }
+    }, 
+    {
+        "pk": 925, 
+        "model": "blog.activity", 
+        "fields": {
+            "username": "erunama", 
+            "author": "", 
+            "title": "Programming Books With The Best Source Code", 
+            "comments": "", 
+            "source": "RD", 
+            "link": "http://www.reddit.com/r/programming/comments/aqtvd/programming_books_with_the_best_source_code/", 
+            "published": 1, 
+            "guid": "http://www.reddit.com/r/programming/comments/aqtvd/programming_books_with_the_best_source_code/", 
+            "pub_date": "2010-01-17 18:51:56"
+        }
+    }, 
+    {
+        "pk": 927, 
+        "model": "blog.activity", 
+        "fields": {
+            "username": "erunama", 
+            "author": "", 
+            "title": "Python Cheat Sheet - Handy one-page reference sheet for the Python programming language", 
+            "comments": "", 
+            "source": "RD", 
+            "link": "http://www.reddit.com/r/programming/comments/7ru8s/python_cheat_sheet_handy_onepage_reference_sheet/", 
+            "published": 1, 
+            "guid": "http://www.reddit.com/r/programming/comments/7ru8s/python_cheat_sheet_handy_onepage_reference_sheet/", 
+            "pub_date": "2009-01-23 00:53:12"
+        }
+    }, 
+    {
+        "pk": 926, 
+        "model": "blog.activity", 
+        "fields": {
+            "username": "erunama", 
+            "author": "", 
+            "title": "Hacking a Programmable Road Sign", 
+            "comments": "", 
+            "source": "RD", 
+            "link": "http://www.reddit.com/r/programming/comments/7rjec/hacking_a_programmable_road_sign/", 
+            "published": 1, 
+            "guid": "http://www.reddit.com/r/programming/comments/7rjec/hacking_a_programmable_road_sign/", 
+            "pub_date": "2009-01-21 21:10:21"
+        }
+    },
+        {   "pk": 2, 
+            "model": "flatpages.flatpage", 
+            "fields": {
+                    "registration_required": 0, 
+                    "title": "About", 
+                    "url": "/about/", 
+                    "template_name": "", 
+                    "sites": [1], 
+                    "content": 
+                    "place holder for the about us page", 
+                    "enable_comments": 0
+            }
+        }, 
+        {
+            "pk": 1, 
+            "model": "flatpages.flatpage", 
+            "fields": {
+                "registration_required": 0, 
+                "title": "Projects", 
+                "url": "/projects/", 
+                "template_name": "", 
+                "sites": [1], 
+                "content": "place holder for the projects pages", "enable_comments": 0
+                }
+        }
+    
+    
+]

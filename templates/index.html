@@ -1,0 +1,20 @@
+{% extends "base.html" %}
+
+{% block stylesheets %}<meta name="description" content="Personal blog of Dan Carroll, a developer based in Seattle. Topics include C#, Python, Django, and gaming." />{% endblock %}
+{% block title %} | Home{% endblock %}
+{% block content %}
+        <h2 class="section-title"><a href="{% url blog_index %}">entries</a></h2>
+        <div id="entry-list">
+            {% for entry in blog_entries %}
+                <h3><a href="{{ entry.get_absolute_url }}">{{ entry.title }}</a> <span class="time">POSTED {{ entry.pub_date|timesince|upper }} AGO</span></h3>
+                <p>{{ entry.snip }} <a href="{{ entry.get_absolute_url }}">(Read more...)</a></p>
+            {% endfor %}
+               
+            <div class="indicator"><a href="{% url blog_index %}">More blog entries &#187;</a></div>
+        </div>
+        
+        <h2 class="section-title"><a href="{% url main_activity %}">activity</a></h2>
+            {% load activitysync_extras %}
+            {% render_activities activities %}
+            <div class="indicator"><a href="{% url main_activity %}">More activity &#187;</a></div>
+{% endblock %}
