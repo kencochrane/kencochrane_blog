@@ -31,6 +31,10 @@ BASE_DIR = os.path.abspath(os.path.dirname(__file__))
 MEDIA_ROOT = os.path.join(BASE_DIR, 'site-media/')
 ADMIN_MEDIA_ROOT = os.path.join(BASE_DIR, 'site-media/admin/')
 
+MEDIA_URL = "/static/"
+
+STATIC_URL = '/static/'
+
 # Make this unique, and don't share it with anybody.
 # This should be defined in the local_settings.py file
 SECRET_KEY = "mySecretKeyIs120u9239234329i40932i4902nknkanfuiasnfaiurThis"
