@@ -42,9 +42,6 @@ urlpatterns = patterns('',
     # Robots.txt
     url(r'^robots.txt$', view='mysite.views.robots', name='robots'),
     
-    # robots.txt
-    url(r'^robots.txt$', view='mysite.views.robots', name='robots'),
-    
     # Main site index
     url(r'^$', view='mysite.views.index', name='main_index'),
 )
